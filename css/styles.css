@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box; /*ajusta al tamaño de la caja*/
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+
+}
+/*comienzo de header*/
+header {
+  background-color: black;
+}
+#logos{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#copa img{
+  width: 100px;
+}
+#fifa img{
+  width: 191px;
+}
+/*fin header*/
+/*comienzo de nav*/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #eee;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+.activo{
+  /*border-bottom: #555 solid 3px;*/
+  box-shadow: 5px 4px darkgray;
+}
+/*fin de nav*/
+/*comienzo de main*/
+section{
+  width: 800px;
+  height: 400px;
+  background-color: #555;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+section div{
+  width: 250px;
+  background-color: rgba(100, 98, 94, 0.463);
+  height: 200px;
+  margin: 1px;
+
+}
+#intro{
+  background-image: url(https://img.freepik.com/vector-premium/fondo-espacial-estrellas-brillantes-noche-estrellada-estrellas-brillantes-cielo-degradado_370567-1189.jpg);
+  /*background-repeat: no-repeat;
+  background-size: cover;*/
+  box-shadow: 10px 8px #1717174d;
+  border-radius: 15px;
+
+
+}
+#eeuu{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_the_United_States_%281912-1959%29.svg/3840px-Flag_of_the_United_States_%281912-1959%29.svg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#mx{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSU-LvJrvDaVpgqybZPd56vT29q1hzjy-SNg&s);
+  background-size: cover;
+
+}
+#can{
+  background-image: url();
+  background-position:center  ;
+  background-size: cover;
+  
+}
+/*videos*/
+#video{
+  width: 600px;
+  height: 300px;
+}
+
+
+/*fin de main*/
+/*comienzo de footer*/
+
+footer{
+  background-color: #000;
+ color: white;
+ font-size: smaller;
+ display: flex; /*muestra el contenido ajustado*/
+ flex-wrap: wrap;
+ /*align-items: center;
+ justify-content: center;*/
+ justify-content: space-evenly;
+}
+#colegio{
+width: 33%;
+background-color: red;
+padding: 5px;
+
+}
+footer a{
+  color: #aaa;
+}
+#alumno{
+width: 33%;
+background-color: yellow;
+color: #aaa;
+padding: 5px;
+}
+#sociales{
+width: 33%;
+background-color: lightblue;
+padding: 5px;
+}
+#sociales img{
+  width:50px;
+}
+/*fin de footer*/
+
+
+
+
+
+
+
+
+
+
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
