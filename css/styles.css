@@ -57,6 +57,9 @@ nav a[aria-current='page'] {
   /*border-bottom: #555 solid 3px;*/
   box-shadow: 5px 4px darkgray;
 }
+nav a:hover{
+background-color: rgba(155, 242, 222, 0.5);
+}
 /*fin de nav*/
 /*comienzo de main*/
 section{
@@ -88,19 +91,23 @@ section div{
 
 }
 #eeuu{
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_the_United_States_%281912-1959%29.svg/3840px-Flag_of_the_United_States_%281912-1959%29.svg.png);
+  background-image: url(../img/eeuu.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #mx{
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSU-LvJrvDaVpgqybZPd56vT29q1hzjy-SNg&s);
+  background-image: url(../img/mexico.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 
 }
 #can{
-  background-image: url();
-  background-position:center  ;
+  background-image: url(../img/canada.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   
 }
 /*videos*/
@@ -109,8 +116,42 @@ section div{
   height: 300px;
 }
 
-
+/*presentacion*/
+#presentacion{
+  height: 600px;
+}
+.videos_locales{
+  background-color: #555;
+ width: 600px;
+  border: #000 solid 7px;
+  box-shadow: #555555a0 5px 2px;
+  text-align: center;
+  margin: 0 auto;
+}
 /*fin de main*/
+/* pagina estadios*/
+.estadosunidos h2{
+  text-align: center;
+}
+.mexico h2{
+  text-align: center;
+}
+.canada h2{
+text-align: center;
+}
+table, tr, td,th{
+  border: double rgba(100, 194, 225, 0.637) 5px;
+  border-collapse:collapse;
+  width: 400px;
+  margin: 0 auto;
+  }
+  tr :hover{
+  background-color: #555;
+  }
+  td img{
+  width: 200px;
+  }
+  
 /*comienzo de footer*/
 
 footer{
@@ -165,4 +206,53 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+/*campeones*/
+/*contenedor principal: divide el diseño en dos columnas(contienente y paises)*/
+.campeones{
+  display: grid;
+  grid-template-columns: 1fr 3fr; /*25%para contiente, 75% para paises*/
+  border: 2px solid #000;
+  width: 100%;
+}
+/*columna izquierda: contientete ocupara todo elk alto disponible automaticamente*/
+.continente{
+  border-right: 2px solid black;
+  padding: 15px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  }
+  /*Columna derecha: Se convierte en otro Grid para organizar el contenido interno*/
+  .paises{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+  /*El titulo del pais ocupa las dos columnas*/
+  .pais{
+    grid-column: span 2;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 2px solid black;
+    }
+  /* Las fotos se acomodan una al lado de la otra automaticamente (50% cada una)*/
+    .foto{
+  min-height: 120px;
+  padding: 35px 10px 10px 10px;
+  font-size: 11px;
+  border-bottom: 2px solid black;
+    }
+    /* Borde vertical divisor solo en la primera foto*/
+    .foto:nth-of-type(odd){
+  border-right: 2px solid black;
+    }
+    .resenia{
+  grid-column: span 2;
+  padding: 10px;
+  min-height: 80px;
+  font-size: 11px;
+    }
+    /*datos de campeones*/
+.paises .foto img{
+  width: 100%;
 }
